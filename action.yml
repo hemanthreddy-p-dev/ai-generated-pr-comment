@@ -1,0 +1,22 @@
+name: 'AI Generated PR Comment with Gemini'
+description: 'Automatically analyze pull requests using Google Gemini AI and post intelligent comments'
+author: 'Your Name'
+
+inputs:
+  github-token:
+    description: 'GitHub Token for API access'
+    required: true
+  gemini-api-key:
+    description: 'Google Gemini API key'
+    required: true
+
+outputs:
+  analysis-result:
+    description: 'The AI-generated analysis of the PR'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.github-token }}
+    - ${{ inputs.gemini-api-key }}
