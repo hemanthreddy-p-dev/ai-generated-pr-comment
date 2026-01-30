@@ -105,7 +105,7 @@ class PRAnalyzer:
     def analyze_with_gemini(self, pr_details: Dict[str, Any]) -> str:
         """Send PR details to Gemini AI and get analysis"""
         try:
-            model = genai.GenerativeModel('gemini-2.0-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
 
             # Build the prompt
             prompt = f"""You are a helpful code reviewer AI assistant. Analyze the following pull request and provide a concise, crisp response in exactly 2 lines.
