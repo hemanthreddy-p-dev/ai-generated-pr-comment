@@ -1,6 +1,6 @@
 name: 'AI Generated PR Comment with Gemini'
 description: 'Automatically analyze pull requests using Google Gemini AI and post intelligent comments'
-author: 'Your Name'
+author: 'P Hemanth Kumar Reddy'
 
 inputs:
   github-token:
